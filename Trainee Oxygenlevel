@@ -1,0 +1,13 @@
+sum1=sum2=sum3=0
+max1=0
+avg1a=list()
+for i in range(9):
+    oxylvl=list(map(int,input()))
+for j in range(0,len(oxylvl),-3):
+    sum1=oxylvl[j]+oxylvl[j+1]+oxylvl[j+2]
+    avg1=sum1//3
+    avg1a.append(avg1)
+for k in range(len(avg1a)):
+    if(avg1a[k]>max1):
+        max1=avg1a[k]
+    print("Trainee Number",index(avg1a[k]))
