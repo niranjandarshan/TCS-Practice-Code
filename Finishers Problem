@@ -1,0 +1,20 @@
+R=[]
+for i in range(5):
+    r=float(input())
+
+    R.append(r)
+for i in range(len(R)):
+    if R[i]<0.0 or R[i]>42.195:
+        print("Invalid Number")
+        break
+    else:
+        mylist=set(R)
+        my_li=list(mylist)
+
+my_li.sort(reverse=True)
+my_li.remove(my_li[0])
+
+for i in range(0,len(my_li)):
+    print(my_li[i])
+        
+        
